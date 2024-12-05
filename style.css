@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#app {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+/* Estilos para os botões */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para os campos de input */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+/* Estilo da área de resultado */
+#valor {
+  margin-top: 20px;
+  background-color: #f1f3f4;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+#valor-items {
+  margin-top: 20px;
+  background-color: #f1f3f4;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Tela inicial (Home) */
+#home-screen {
+  text-align: center;
+}
+
+#home-screen h1 {
+  font-size: 28px;
+  color: #007bff;
+}
+
+#home-screen button {
+  background-color: #28a745; /* Verde para os botões da tela inicial */
+}
+
+#home-screen button:hover {
+  background-color: #218838;
+}
+
+/* Tela de calculadora de Tamanho */
+#size-screen {
+  text-align: center;
+}
+
+#size-screen label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #555;
+}
+
+#size-screen div {
+  margin-top: 20px;
+}
+
+/* Estilo dos checkboxes */
+#size-screen input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  border: 2px solid #ddd;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#size-screen input[type="checkbox"]:hover {
+  border-color: #007bff;
+}
+
+#size-screen input[type="checkbox"]:checked {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Adicionando uma borda sutil ao botão "Voltar" */
+#btn-back-items {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 15px;
+}
+
+#btn-back-size {
+  background-color: #dc3545;
+  color: white;
+  margin-top: 15px;
+}
+
+#btn-back-size:hover {
+  background-color: #c82333;
+}
+
+#btn-back-items:hover {
+  background-color: #c82333;
+}
+
+.screen {
+  display: none;
+}
+
+#home-screen {
+  display: block;
+}
