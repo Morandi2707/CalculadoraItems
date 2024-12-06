@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "main": "calculo.js",
   "scripts": {
-    "publish": "dist",
-    "command": "parcel build index.html",
     "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
