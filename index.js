@@ -82,7 +82,7 @@ function calculo() {
   const resultado = calculo1 * calculo2;
 
   const mensagem = `${user}, o valor calculado é: ${resultado}`;
-  document.getElementById("valor-items").innerHTML = mensagem;
+  document.getElementById("valor").innerHTML = mensagem;
 }
 
 function calculoItems() {
