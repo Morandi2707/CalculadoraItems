@@ -2,8 +2,8 @@ const screens = {
   home: `
           <div id="home-screen" class="screen">
             <h1>Escolha uma Opção</h1>
-            <button id="btn-items">Itens</button>
-            <button id="btn-size">Tamanho</button>
+            <button id="btn-items">Quantidade por Caixa</button>
+            <button id="btn-size">Caixa por quantidade</button>
           </div>
         `,
   size: `
@@ -81,7 +81,7 @@ function calculo() {
   const calculo2 = Math.trunc(largura / divisor);
   const resultado = calculo1 * calculo2;
 
-  const mensagem = `${user}, o valor calculado é: ${resultado}`;
+  const mensagem = `${user} o valor calculado é: ${resultado}`;
   document.getElementById("valor").innerHTML = mensagem;
 }
 
