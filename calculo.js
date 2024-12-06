@@ -82,7 +82,7 @@ function calculo() {
   const resultado = calculo1 * calculo2;
 
   const mensagem = `${user}, o valor calculado é: ${resultado}`;
-  document.getElementById("valor").innerHTML = mensagem;
+  document.getElementById("valor-items").innerHTML = mensagem;
 }
 
 function calculoItems() {
@@ -101,10 +101,28 @@ function calculoItems() {
     return;
   }
 
-  const areaItem = altura * largura;
-  const areaTotal = areaItem * quantidade;
+  if (Math.abs(altura - largura) < 0.0001) {
+    calculoItemsRetangulo(quantidade, largura, altura, user);
+  } else {
+    calculoItemsQuadrada(quantidade, largura, altura, user);
+  }
+}
 
-  const mensagem = `${user}, o total ocupado é: ${areaTotal}`;
+function calculoItemsRetangulo(quantidade, largura, altura, user) {
+  const colunas = Math.ceil(Math.sqrt(quantidade));
+  const fileiras = Math.ceil(quantidade / colunas);
+
+  const comprimentoCaixa = colunas * largura;
+  const alturaCaixa = Math.ceil(fileiras * altura);
+  const mensagem = `${user} a altura é ${alturaCaixa} e o comprimento é ${comprimentoCaixa}`;
+  document.getElementById("valor-items").innerHTML = mensagem;
+}
+
+function calculoItemsQuadrada(quantidade, largura, altura, user) {
+  const intensPorLado = Math.ceil(Math.sqrt(quantidade));
+  const ladoCaixa = Math.ceil(intensPorLado * Math.max(largura, altura));
+
+  const mensagem = `${user}, o total ocupado é: ${ladoCaixa}`;
   document.getElementById("valor-items").innerHTML = mensagem;
 }
 
