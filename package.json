@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "calculo.js",
   "scripts": {
-    "build": "echo 'npm run build'",
+    "publish": "dist",
+    "command": "npm run build",
+    "build": "npm run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
