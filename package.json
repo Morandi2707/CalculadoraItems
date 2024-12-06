@@ -5,7 +5,7 @@
   "scripts": {
     "publish": "dist",
     "command": "npm run build",
-    "build": "npm run build",
+    "build": "parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -17,6 +17,8 @@
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "mongoose": "^8.8.3",
-    "mysql2": "^3.11.4"
+    "mysql2": "^3.11.4",
+    "parcel": "^2.13.2",
+    "save-dev": "^0.0.1-security"
   }
 }
