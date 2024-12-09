@@ -34,7 +34,7 @@ const screens = {
             <input id="items-heigth" type="number" placeholder="Ex: 10">
             <label for="items-width">Largura:</label>
             <input id="items-width" type="number" placeholder="Ex: 20">
-            <label for="constante-items">Altura:</label>
+            <label for="constante-items">Comprimento:</label>
             <input id="constante-items" type="number" placeholder="Ex: 5">
             <div>
               <label><input id="checkbox1-items" type="checkbox" value="3.5"> Constante 3.5</label>
@@ -79,7 +79,7 @@ function calculo() {
 
   const calculo1 = Math.trunc(altura / divisor);
   const calculo2 = Math.trunc(largura / divisor);
-  const resultado = calculo1 * calculo2;
+  const resultado = Math.ceil(calculo1 * calculo2);
 
   const mensagem = `${user} o valor calculado é: ${resultado}`;
   document.getElementById("valor").innerHTML = mensagem;
@@ -112,9 +112,9 @@ function calculoItemsRetangulo(quantidade, largura, altura, user) {
   const colunas = Math.ceil(Math.sqrt(quantidade));
   const fileiras = Math.ceil(quantidade / colunas);
 
-  const comprimentoCaixa = colunas * largura;
+  const comprimentoCaixa = Math.ceil(colunas * largura);
   const alturaCaixa = Math.ceil(fileiras * altura);
-  const mensagem = `${user} a altura é ${alturaCaixa} e o comprimento é ${comprimentoCaixa}`;
+  const mensagem = `${user} a largura é ${alturaCaixa} e o comprimento é ${comprimentoCaixa}`;
   document.getElementById("valor-items").innerHTML = mensagem;
 }
 
