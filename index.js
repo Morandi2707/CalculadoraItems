@@ -9,7 +9,7 @@ const screens = {
   size: `
           <div id="size-screen" class="screen" style="display: none;">
             <h1>Calculadora de Tamanho</h1>
-            <label for="box-heigth">Altura:</label>
+            <label for="box-heigth">Comprimento:</label>
             <input id="box-heigth" type="number" placeholder="Ex: 10">
             <label for="box-width">Largura:</label>
             <input id="box-width" type="number" placeholder="Ex: 20">
